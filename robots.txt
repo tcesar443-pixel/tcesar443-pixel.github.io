@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tcesar443-pixel.github.io/sitemap.xml
