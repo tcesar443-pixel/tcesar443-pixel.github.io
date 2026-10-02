@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="668" height="1002" viewBox="0 0 668 1002" role="img" aria-labelledby="t d">
+<title id="t">Psicologia do Investimento — Thiago Murro</title>
+<desc id="d">Capa em preto e dourado do livro Psicologia do Investimento.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#090a0d"/><stop offset="1" stop-color="#17191f"/></linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#9b7840"/><stop offset=".5" stop-color="#e3c37b"/><stop offset="1" stop-color="#8f6b34"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<rect width="668" height="1002" fill="url(#bg)"/>
+<rect x="28" y="28" width="612" height="946" rx="4" fill="none" stroke="url(#gold)" stroke-width="2"/>
+<rect x="42" y="42" width="584" height="918" rx="3" fill="none" stroke="#6e542d" stroke-width="1"/>
+<circle cx="334" cy="410" r="185" fill="#d6b46d" opacity=".055" filter="url(#glow)"/>
+<path d="M278 285c-70 38-111 111-95 188 12 58 57 100 105 126 20 11 30 27 35 47h77c-2-24 5-42 30-57 60-35 93-100 75-166-21-79-109-141-227-138z" fill="none" stroke="#b8944f" stroke-width="3" opacity=".9"/>
+<path d="M248 430l42-30 33 28 52-76 49 57 48-93" fill="none" stroke="#d3b66f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="248" cy="430" r="6" fill="#d3b66f"/><circle cx="290" cy="400" r="6" fill="#d3b66f"/><circle cx="323" cy="428" r="6" fill="#d3b66f"/><circle cx="375" cy="352" r="6" fill="#d3b66f"/><circle cx="424" cy="409" r="6" fill="#d3b66f"/><circle cx="472" cy="316" r="6" fill="#d3b66f"/>
+<text x="334" y="128" text-anchor="middle" fill="#d7b86e" font-family="Georgia,serif" font-size="22" letter-spacing="5">THIAGO MURRO</text>
+<line x1="214" y1="151" x2="454" y2="151" stroke="#8f6b34"/>
+<text x="334" y="685" text-anchor="middle" fill="#f1eadb" font-family="Georgia,serif" font-size="55" font-weight="700">PSICOLOGIA</text>
+<text x="334" y="747" text-anchor="middle" fill="#f1eadb" font-family="Georgia,serif" font-size="55" font-weight="700">DO INVESTIMENTO</text>
+<text x="334" y="798" text-anchor="middle" fill="#d0b16a" font-family="Arial,sans-serif" font-size="19" letter-spacing="1.2">A MENTE, O DINHEIRO E AS DECISÕES</text>
+<text x="334" y="828" text-anchor="middle" fill="#d0b16a" font-family="Arial,sans-serif" font-size="19" letter-spacing="1.2">QUE CONSTROEM PATRIMÔNIO</text>
+<line x1="170" y1="875" x2="498" y2="875" stroke="#8f6b34"/>
+<text x="334" y="912" text-anchor="middle" fill="#b99a58" font-family="Georgia,serif" font-size="15" font-style="italic">“A riqueza adquirida às pressas diminuirá;</text>
+<text x="334" y="934" text-anchor="middle" fill="#b99a58" font-family="Georgia,serif" font-size="15" font-style="italic">mas quem a ajunta pouco a pouco terá aumento.”</text>
+<text x="334" y="956" text-anchor="middle" fill="#8f6b34" font-family="Arial,sans-serif" font-size="12">PROVÉRBIOS 13:11</text>
+</svg>
