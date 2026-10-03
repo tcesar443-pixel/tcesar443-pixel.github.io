@@ -96,3 +96,5 @@ jobs:
           fi
           git commit -m 'SEO: atualiza endereco oficial para thiagomurro.github.io'
           git push origin HEAD:main
+
+# execucao final apos renomeacao do repositorio
