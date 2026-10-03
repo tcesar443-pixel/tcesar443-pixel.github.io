@@ -26,12 +26,13 @@ jobs:
           from pathlib import Path
 
           root = Path('.')
-          old_urls = [
-              'https://tcesar443-pixel.github.io',
-              'https://thiagomurro-pixel.github.io',
+          replacements = [
+              ('https://tcesar443-pixel.github.io', 'https://thiagomurro.github.io'),
+              ('https://thiagomurro-pixel.github.io', 'https://thiagomurro.github.io'),
+              ('tcesar443-pixel.github.io', 'thiagomurro.github.io'),
+              ('thiagomurro-pixel.github.io', 'thiagomurro.github.io'),
           ]
-          new_url = 'https://thiagomurro.github.io'
-          text_exts = {'.html', '.txt', '.md', '.xml', '.webmanifest', '.js', '.css'}
+          text_exts = {'.html', '.txt', '.md', '.xml', '.webmanifest', '.js', '.css', '.svg'}
 
           for p in root.rglob('*'):
               if not p.is_file() or '.git' in p.parts or '.github' in p.parts:
@@ -43,13 +44,16 @@ jobs:
               except UnicodeDecodeError:
                   continue
               original = s
-              for old in old_urls:
-                  s = s.replace(old, new_url)
+              for old, new in replacements:
+                  s = s.replace(old, new)
               if s != original:
                   p.write_text(s, encoding='utf-8')
 
-          robots = '''User-agent: *\nAllow: /\n\nSitemap: https://thiagomurro.github.io/sitemap.xml\n'''
-          Path('robots.txt').write_text(robots, encoding='utf-8')
+          Path('README.md').write_text('# Thiago Murro — Site Oficial\n', encoding='utf-8')
+          Path('robots.txt').write_text(
+              'User-agent: *\nAllow: /\n\nSitemap: https://thiagomurro.github.io/sitemap.xml\n',
+              encoding='utf-8'
+          )
 
           pages = [
               ('https://thiagomurro.github.io/', '1.0'),
@@ -89,7 +93,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add index.html biografia.html livro.html palestras.html imprensa.html links.html contato.html 404.html robots.txt sitemap.xml site.webmanifest README.md script.js styles.css 2>/dev/null || true
+          git add -A
           if git diff --cached --quiet; then
             echo 'Nenhuma alteracao pendente.'
             exit 0
